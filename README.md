@@ -1,5 +1,8 @@
 # Cursor-Flip
-Convert right-handed X11 cursors to left-handed. Also seconds as a xcursor parser.
+Convert right-handed X11 cursors to left-handed (or vice-versa, I guess). 
+Also seconds as a xcursor parser.
+
+!! This code is "I just wanted it to work" level. There are so many poor coding practices in it.
 
 : I got tired of finding so many great X11 mouse cursor themes out there that aren't right-handed (not anyone's fault).   
 : I got bored of having to use GIMP to flip the xcursor files, and then having to edit the X-hotspots.   
