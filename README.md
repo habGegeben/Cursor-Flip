@@ -1,5 +1,5 @@
 # Cursor-Flip
-Convert right-handed X11 cursors to left-handed.
+Convert right-handed X11 cursors to left-handed. Also seconds as a xcursor parser.
 
 : I got tired of finding so many great X11 mouse cursor themes out there that aren't right-handed (not anyone's fault).   
 : I got bored of having to use GIMP to flip the xcursor files, and then having to edit the X-hotspots.   
@@ -32,3 +32,24 @@ Convert right-handed X11 cursors to left-handed.
  - index.theme file
 
 !! Otherwise, you risk the theme reverting and referencing the old cursors.
+
+## Parser
+
+This is as basic (read: lazy) a parser can get, but will provide the following data if you wish to enable them by removing the comments:
+
+- Table of Contents
+- - Bytes in header
+  - File version
+  - Number of entries
+  - Chunk Types (comment or image)
+  - Absolute Chunk address
+- Chunk data
+- - Chunk Header
+  - Size
+  - Version
+  - Width
+  - Height
+  - X-hotspot
+  - Y-hotspot
+  - Frame Delay in milliseconds (if animated)
+  - Pixel bytes
