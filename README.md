@@ -4,7 +4,7 @@ Also seconds as a xcursor parser.
 
 !! This code is "I just wanted it to work" level. There are so many poor coding practices in it.
 
-: I got tired of finding so many great X11 mouse cursor themes out there that aren't right-handed (not anyone's fault).   
+: I got tired of finding so many great X11 mouse cursor themes out there that aren't left-handed (not anyone's fault).   
 : I got bored of having to use GIMP to flip the xcursor files, and then having to edit the X-hotspots.   
 : I wasn't bored enough to just point this at a folder or compressed file and have it do _everything_, so...
 
@@ -38,7 +38,7 @@ Also seconds as a xcursor parser.
 
 ## Parser
 
-This is as basic (read: lazy) a parser can get, but will provide the following data if you wish to enable them by removing the comments:
+This is as basic (read: lazy) as a parser can get, but will provide the following data if you wish to enable them by removing the comments:
 
 - Table of Contents
 - - Bytes in header
